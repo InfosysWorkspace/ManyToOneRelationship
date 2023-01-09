@@ -7,7 +7,7 @@ public class LoanDTO {
     private Double amount;
     private LocalDate loanIssueDate;
     private String status;
-    private CustomerDTO customerDTO;
+    private CustomerDTO customer;
 
     public Integer getLoanId() {
         return this.loanId;
@@ -41,12 +41,12 @@ public class LoanDTO {
         this.status = status;
     }
 
-    public CustomerDTO getCustomerDTO() {
-        return this.customerDTO;
+    public CustomerDTO getCustomer() {
+        return this.customer;
     }
 
-    public void setCustomerDTO(CustomerDTO customerDTO) {
-        this.customerDTO = customerDTO;
+    public void setCustomer(CustomerDTO customer) {
+        this.customer = customer;
     }
 
     @Override
@@ -56,7 +56,8 @@ public class LoanDTO {
                 ", amount=" + amount +
                 ", loanIssueDate=" + loanIssueDate +
                 ", status='" + status + '\'' +
-                ", customerDTO=" + customerDTO +
+                ", customer=" + customer +
                 '}';
     }
+
 }
